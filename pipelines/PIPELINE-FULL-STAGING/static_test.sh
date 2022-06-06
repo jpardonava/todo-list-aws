@@ -17,7 +17,7 @@ then
     exit 1
 fi
 
-flake8 src/*.py
+flake8 --ignore=E302,E501,E226,E121 src/*.py
 if [[ $? -ne 0 ]]
 then
     exit 1
